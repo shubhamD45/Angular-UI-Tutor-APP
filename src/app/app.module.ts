@@ -6,19 +6,21 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { DemoComponent } from './demo/demo.component';
+
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatListModule } from '@angular/material/list';
+import { MatGridListModule } from '@angular/material/grid-list';
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     AboutUsComponent,
-    ContactUsComponent,
-    DemoComponent
+    ContactUsComponent
+
   ],
   imports: [
     BrowserModule,
@@ -27,9 +29,12 @@ import { MatTabsModule } from '@angular/material/tabs';
     CommonModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MatTabsModule
+    MatTabsModule,
+    MatListModule,
+    MatGridListModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [DashboardComponent, AboutUsComponent, ContactUsComponent]
 })
 export class AppModule { }

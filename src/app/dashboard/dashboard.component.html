@@ -1,1 +1,78 @@
-<h2>dashboard</h2>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!-- Team -->
+<section id="team" class="pb-5">
+    <div class="container">
+        <h1 class="section-title h1"><b>OUR TUTORS TEAM</b></h1>
+        <div class="row">
+            <!-- Team member -->
+            <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let t of tutors">
+                <div class="image-flip">
+                    <div class="mainflip flip-0">
+                        <div class="frontside">
+                            <div class="card">
+                                <div class="card-body text-center">
+
+                                    <h2 class="card-title"><b>{{t.name}}</b></h2>
+                                    <h3><b>Contact Details</b></h3>
+                                    <h4><b>{{t.email}}</b></h4>
+                                    <h4><b>{{t.mobno}}</b></h4>
+                                    <h4><b>{{t.address}}</b></h4>
+                                    <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                                            class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="backside">
+                            <div class="card">
+                                <div class="card-body text-center mt-4">
+                                    <h4 class="card-title"><b>Book Tutor</b></h4>
+                                    <p class="card-text">
+                                        {{t.name}} is an amazing tutor specialized in {{t.subject}}
+                                        with Good teaching experience.
+
+                                    </p>
+                                    <button class="booktutor">Contact {{t.name}} </button>
+                                    <ul class="list-inline">
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank"
+                                                href="https://www.fiverr.com/share/qb8D02">
+                                                <i class="fa fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank"
+                                                href="https://www.fiverr.com/share/qb8D02">
+                                                <i class="fa fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank"
+                                                href="https://www.fiverr.com/share/qb8D02">
+                                                <i class="fa fa-skype"></i>
+                                            </a>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <a class="social-icon text-xs-center" target="_blank"
+                                                href="https://www.fiverr.com/share/qb8D02">
+                                                <i class="fa fa-google"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ./Team member -->
+            <!-- ./Team member -->
+        </div>
+
+    </div>
+
+</section>
+<!-- Team -->

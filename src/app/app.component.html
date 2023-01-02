@@ -1,24 +1,49 @@
-<h1>shubham</h1>
+<ul class="list-inline">
+    <li class="list-inline-item">
+        <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+            <i class="fa fa-facebook"></i>
+        </a>
+    </li>
+    <li class="list-inline-item">
+        <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+            <i class="fa fa-twitter"></i>
+        </a>
+    </li>
+    <li class="list-inline-item">
+        <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+            <i class="fa fa-skype"></i>
+        </a>
+    </li>
+    <li class="list-inline-item">
+        <a class="social-icon text-xs-center" target="_blank" href="https://www.fiverr.com/share/qb8D02">
+            <i class="fa fa-google"></i>
+        </a>
+    </li>
+</ul>
+
+
 <div class="login" style="text-align: right">
-    <button class="loginbtn">LogIn</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="loginbtn" (click)="swapnil()">LogIn</button>&nbsp;&nbsp;&nbsp;&nbsp;
     <button class="signup">SignUp</button>
+</div>
 
 
+<body style="text-align: center;">
 
-    <body>
+    <div class="s">
+        <a>
+            <h1 class="b">Tutor Finder System</h1>
+        </a>
 
-        <div class="s" style="text-align: center;">
-            <button class="mainbtn" mat-fab>Tutor Finder</button>
+    </div>
+    <nav class="fonts">
+        <a class="a" style="color: black;" routerLink="dashboard">Home</a> &nbsp;&nbsp;&nbsp;
 
-        </div>
-        <nav style="text-align: center;" class="fonts">
-            <a style="color: black;" routerLink="dashboard">Home</a> &nbsp;&nbsp;&nbsp;
+        <a class="a" style="color: rgb(12, 6, 6);" routerLink="aboutus">About Us</a>&nbsp;&nbsp;&nbsp;
 
-            <a style="color: rgb(12, 6, 6);" routerLink="aboutus">About Us</a>&nbsp;&nbsp;&nbsp;
-
-            <a style="color: black;" routerLink="contactus">Contact Us</a>&nbsp;&nbsp;&nbsp;
+        <a class="a" style="color: black;" routerLink="contactus">Contact Us</a>&nbsp;&nbsp;&nbsp;
 
 
-        </nav>
-        <router-outlet></router-outlet>
-    </body>
+    </nav>
+    <router-outlet></router-outlet>
+</body>

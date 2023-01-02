@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button';
+import { Parent } from '../parent';
+
+import { ParentService } from '../parent.service';
+import { Tutor } from '../tutor';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,10 +11,15 @@ import { MatButtonModule } from '@angular/material/button';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  public tutors: Tutor[];
+  public parent: Parent[];
+  constructor(private parentservice: ParentService) { }
 
   ngOnInit(): void {
-  }
+    this.parentservice.FindAllTutor().subscribe(data1 => {
+      this.tutors = data1;
+    });
 
+  }
 
 }

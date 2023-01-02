@@ -1,7 +1,7 @@
 nav {
     padding: 5px;
     margin: 0px;
-    border-radius: 10ch;
+
 
     list-style-type: none;
     overflow: hidden;
@@ -9,10 +9,23 @@ nav {
 
 }
 
-a {
+
+
+.a {
     text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: larger;
+    padding: 35px;
+
+}
+
+.b {
+    color: #4B6CB7;
+    font-size: 33px;
+    font-family: 'comio';
+    font-weight: 600;
+    position: relative;
+
 }
 
 .mainbtn {
@@ -32,15 +45,15 @@ a {
     font-size: 19px;
 }
 
-a:hover {
+.a:hover {
     background-color: #9796F0;
-    border-radius: 10px;
+    border-radius: 65px;
 
 }
 
 .login {
     padding-top: 25px;
-    padding-right: 80px;
+    padding-right: 110px;
 
 }
 
@@ -48,14 +61,15 @@ a:hover {
 
 .loginbtn {
 
+
     border-color: #73a8a8;
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 0.4rem 0.9rem;
     border-radius: 10rem;
-    background-color: #ff4646;
+    background-color: #4B6CB7;
     color: #fff;
     font-family: arial;
-    font-size: 1rem;
+    font-size: 0.7rem;
     letter-spacing: 0.15rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -96,12 +110,12 @@ a:hover {
 .signup {
     border-color: #73a8a8;
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 0.4rem 0.9rem;
     border-radius: 10rem;
-    background-color: #ff4646;
+    background-color: #4B6CB7;
     color: #fff;
     font-family: arial;
-    font-size: 1rem;
+    font-size: 0.7rem;
     letter-spacing: 0.15rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -135,4 +149,16 @@ a:hover {
 .signup:hover::after {
     transform: scale(1, 1);
     transform-origin: top left;
+}
+
+.list-inline {
+    position: absolute;
+    top: 75px;
+    right: 20px;
+
+}
+
+.list-inline-item {
+    padding-left: 20px;
+
 }
