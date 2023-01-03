@@ -7,7 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TutorFinderUI';
+<<<<<<< HEAD
 
 
 
+=======
+  
+  
+>>>>>>> 7e33c69f2fd088886a821cfd4ed461a71e21d4ed
 }

@@ -1,7 +1,9 @@
 export class Parent {
-    pid: number;
+    pid: string;
+    username: string;
+    password: any;
     email: string;
     name: string;
-    mobno: number;
+    mobno: string;
     address: string;
 }

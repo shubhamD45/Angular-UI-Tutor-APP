@@ -14,13 +14,16 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatListModule } from '@angular/material/list';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { LoginComponent } from './login/login.component';
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
     DashboardComponent,
     AboutUsComponent,
-    ContactUsComponent
-
+    ContactUsComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
     MatButtonModule,
     MatTabsModule,
     MatListModule,
-    MatGridListModule
+    MatGridListModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
