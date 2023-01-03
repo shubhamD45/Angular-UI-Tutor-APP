@@ -7,13 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TutorFinderUI';
-  shubh: any;
 
-  constructor(shubh: AppComponent) {
 
-  }
 
-  swapnil() {
-    this.shubh;
-  }
 }
