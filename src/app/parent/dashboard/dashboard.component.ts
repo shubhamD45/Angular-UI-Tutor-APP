@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Parent } from '../parent';
+import { Parent } from '../../parent';
 
-import { ParentService } from '../parent.service';
-import { Tutor } from '../tutor';
+import { ParentService } from '../../parent.service';
+import { Tutor } from '../../tutor';
 
 @Component({
   selector: 'app-dashboard',
